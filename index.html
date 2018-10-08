@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base16 Ocean Dark</title>
+    <link rel="stylesheet" type="text/css" href="ocean.css"/>
+</head>
+<body>
+<table>
+  <tr style="width:100%;">
+    <td style="width: 40px; height: 40px" class="base00-background"></td>
+    <td style="width: 40px; height: 40px" class="base01-background"></td>
+    <td style="width: 40px; height: 40px" class="base02-background"></td>
+    <td style="width: 40px; height: 40px" class="base03-background"></td>
+    <td style="width: 40px; height: 40px" class="base04-background"></td>
+    <td style="width: 40px; height: 40px" class="base05-background"></td>
+    <td style="width: 40px; height: 40px" class="base06-background"></td>
+    <td style="width: 40px; height: 40px" class="base07-background"></td>
+  </tr>
+  <tr style="width:100%; align:center">
+    <td>#2b303b</td>
+    <td>#343d46</td>
+    <td>#4f5b66</td>
+    <td>#65737e</td>
+    <td>#a7adba</td>
+    <td>#c0c5ce</td>
+    <td>#dfe1e8</td>
+    <td>#eff1f5</td>
+  </tr>
+  <tr style="width:100%;">
+    <td style="width: 40px; height: 40px" class="base08-background"></td>
+    <td style="width: 40px; height: 40px" class="base09-background"></td>
+    <td style="width: 40px; height: 40px" class="base0A-background"></td>
+    <td style="width: 40px; height: 40px" class="base0B-background"></td>
+    <td style="width: 40px; height: 40px" class="base0C-background"></td>
+    <td style="width: 40px; height: 40px" class="base0D-background"></td>
+    <td style="width: 40px; height: 40px" class="base0E-background"></td>
+    <td style="width: 40px; height: 40px" class="base0F-background"></td>
+  </tr>
+  <tr style="width:100%; align:center">
+    <td>#bf616a</td>
+    <td>#d08770</td>
+    <td>#ebcb8b</td>
+    <td>#a3be8c</td>
+    <td>#96b5b4</td>
+    <td>#8fa1b3</td>
+    <td>#b48ead</td>
+    <td>#ab7967</td>
+  </tr>
+</table>
+
+<pre class="base00-background base05">
+    <span class="base0E">require</span> <span class="base0B">"gem"</span>
+
+    <span class="base08">string</span> = <span class="base0B">"base16"</span>
+    <span class="base08">symbol</span> = <span class="base0B">:base16</span>
+    <span class="base08">fixnum</span> = <span class="base09">0</span>
+    <span class="base08">float</span>  = <span class="base09">0.00</span>
+    <span class="base08">array</span>  = <span class="base0A">Array</span>.<span class="base0D">new</span>
+    <span class="base08">array</span>  = [<span class="base0B">'chris'</span>, <span class="base09">85</span>]
+    <span class="base08">hash</span>   = {<span class="base0B">"test"</span> => <span class="base0B">"test"</span>}
+    <span class="base08">regexp</span> = <span class="base0C">/[abc]/</span>
+
+    <span class="base03"># This is a comment</span>
+    <span class="base0E">class</span> <span class="base0A">Person</span>
+
+      <span class="base0D">attr_accessor</span> <span class="base0B">:name</span>
+
+      <span class="base0E">def</span> <span class="base0D">initialize</span>(<span class="base08">attributes</span> = {})
+        <span class="base08">@name</span> = <span class="base08">attributes</span>[<span class="base0B">:name</span>]
+      <span class="base0E">end</span>
+
+      <span class="base0E">def</span> <span class="base0E">self</span>.<span class="base0D">greet</span>
+        <span class="base02-background"><span class="base0B">"hello"</span></span>
+      <span class="base0E">end</span>
+    <span class="base0E">end</span>
+
+    <span class="base08">person1</span> = <span class="base0A">Person</span>.<span class="base0D">new</span>(<span class="base0B">:name</span> => <span class="base0B">"Chris"</span>)
+    <span class="base0D">print</span> <span class="base0A">Person</span>::<span class="base0D">greet</span>, <span class="base0B">" "</span>, <span class="base08">person1</span>.<span class="base0D">name</span>, <span class="base0B">"<span class="base09">\n</span>"</span>
+    <span class="base0D">puts</span> <span class="base0B">"another </span><span class="base0F">#{</span><span class="base0A">Person</span>::<span class="base0D">greet</span><span class="base0F">}</span> <span class="base0F">#{</span><span class="base08">person1</span>.<span class="base0D">name</span><span class="base0F">}</span><span class="base0B">"</span>
+</pre>
+
+<pre class="base07-background base02">
+    <span class="base0E">require</span> <span class="base0B">"rubygems"</span>
+
+    <span class="base08">string</span> = <span class="base0B">"tomorrow"</span>
+    <span class="base08">symbol</span> = <span class="base0B">:tomorrow</span>
+    <span class="base08">fixnum</span> = <span class="base09">0</span>
+    <span class="base08">float</span>  = <span class="base09">0.00</span>
+    <span class="base08">array</span>  = <span class="base0A">Array</span>.<span class="base0D">new</span>
+    <span class="base08">array</span>  = [<span class="base0B">'chris'</span>, <span class="base09">85</span>]
+    <span class="base08">hash</span>   = {<span class="base0B">"test"</span> => <span class="base0B">"test"</span>}
+    <span class="base08">regexp</span> = <span class="base0C">/[abc]/</span>
+
+    <span class="base03"># This is a comment</span>
+    <span class="base0E">class</span> <span class="base0A">Person</span>
+
+      <span class="base0D">attr_accessor</span> <span class="base0B">:name</span>
+
+      <span class="base0E">def</span> <span class="base0D">initialize</span>(<span class="base08">attributes</span> = {})
+        <span class="base08">@name</span> = <span class="base08">attributes</span>[<span class="base0B">:name</span>]
+      <span class="base0E">end</span>
+
+      <span class="base0E">def</span> <span class="base0E">self</span>.<span class="base0D">greet</span>
+        <span class="base06-background"><span class="base0B">"hello"</span></span>
+      <span class="base0E">end</span>
+    <span class="base0E">end</span>
+
+    <span class="base08">person1</span> = <span class="base0A">Person</span>.<span class="base0D">new</span>(<span class="base0B">:name</span> => <span class="base0B">"Chris"</span>)
+    <span class="base0D">print</span> <span class="base0A">Person</span>::<span class="base0D">greet</span>, <span class="base0B">" "</span>, <span class="base08">person1</span>.<span class="base0D">name</span>, <span class="base0B">"<span class="base09">\n</span>"</span>
+    <span class="base0D">puts</span> <span class="base0B">"another </span><span class="base0F">#{</span><span class="base0A">Person</span>::<span class="base0D">greet</span><span class="base0F">}</span> <span class="base0F">#{</span><span class="base08">person1</span>.<span class="base0D">name</span><span class="base0F">}</span><span class="base0B">"</span>
+</pre>
+
+
+
+</body>
+</html>
